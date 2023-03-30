@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo h2 span {
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+    color: rgb(228, 18, 123);
+    position: relative;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 28px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    position: relative;
+}
+
+.img_div img {
+    border-radius: 50%;
+    animation: profile_animate 8s ease-in-out 1s infinite;
+    background: url(./images/FB_IMG_1659577226073.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px hsl(0deg 0% 100% / 30%);
+    justify-self: center;
+    filter: grayscale(100%);
+    height: 250px;
+    width: 250px;
+}
+
+navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 50px;
+    z-index: 10;
+}
+
+.nav_link {
+    display: flex;
+    column-gap: 1rem;
+    margin: 0;
+
+}
+
+.nav_link li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.nav_link li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 12px;
+    font-size: 17px;
+
+}
+
+.nav_link li a:hover {
+    color: rgb(228, 18, 123);
+}
+
+#back-menu {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+.back_img {
+    padding: 80px;
+    margin-top: 94px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(./images/back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+
+.socil_icon {
+    margin: 0;
+    color: rgb(240, 243, 247);
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+
+hr {
+    width: 10%;
+    display: inline-block;
+    margin: 0 8px 5px 0;
+    color: rgb(242, 227, 20);
+
+
+}
+
+.home_header h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(250, 241, 112);
+
+}
+
+.social_media {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_media .fa-facebook,
+.social_media .fa-whatsapp,
+.social_media .fa-instagram {
+    border: 2px solid rgb(121, 119, 119);
+    height: 45px;
+    width: 45px;
+    margin-right: 14px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 100%;
+    color: rgb(250, 241, 112);
+    background-color: rgb(19, 20, 21);
+    box-shadow: inset 0px 0px 10px 4px rgb(232, 227, 227);
+
+}
+
+.social_media .fa-facebook:hover,
+.social_media .fa-whatsapp:hover,
+.social_media .fa-instagram:hover {
+    color: rgb(240, 6, 123);
+    font-size: 30px;
+}
+
+.home_header span {
+    display: inline-block;
+    font-weight: 700;
+    padding: 20px 0 20px 0;
+    color: rgb(241, 235, 145);
+}
+
+.home_text p {
+    color: rgb(241, 235, 145);
+
+}
+
+.all_heading a {
+    text-decoration: none;
+    color: rgb(25, 49, 73);
+}
+
+.all_heading h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.all_heading p {
+    font-size: 13px;
+    color: rgb(223, 226, 230);
+    margin: 7px 0 0 0;
+}
+
+.bg-color {
+    background-color: rgba(227, 54, 172, 0.874);
+    color: white;
+    border: 1px solid wheat;
+    box-shadow: 0px 0px 10px 2px rgb(232, 227, 227);
+}
+
+.image-circle img {
+    border-radius: 50%;
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.874);
+    margin: 80px auto;
+    box-shadow: 0px 0px 10px 2px rgb(232, 227, 227);
+}
+
+.about-raper {
+    border: 1px solid rgb(142, 138, 138);
+    padding: 70px 10px;
+    position: relative;
+
+}
+
+.about-raper::before {
+    content: "";
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.about-raper::after {
+    content: "";
+    border-right: 0px solid white;
+    border-bottom: 0px solid white;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+.about-raper:hover::after {
+    height: 50px;
+    width: 50px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: 0.8s;
+}
+
+.about-raper:hover::before {
+    height: 50px;
+    width: 50px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    transition: 0.8s;
+}
+
+.about-raper h5,
+p {
+    color: white;
+}
+
+.about-raper:hover {
+    background-color: rgba(228, 18, 123, 0.605);
+    box-shadow: 0 0 8px rgba(237, 235, 235, 0.849);
+}
+
+.about-icon {
+    position: absolute;
+    top: -23px;
+    left: 42%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: black;
+    color: rgb(250, 241, 112);
+    transition: 0.9s;
+}
+
+.about-raper:hover .about-icon {
+    transform: rotate(360deg);
+    background-color: rgb(53, 52, 36);
+    ;
+
+}
+
+/* -------------------------------------------------------------skill------------------------------------- */
+
+
+.skill {
+    max-width: 778px;
+    margin: 0 auto;
+    border: 2px solid rgb(201, 192, 192);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px 4px rgb(232, 227, 227);
+}
+
+.skill .skill_inner {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill .skill_inner p {
+    margin: 10px 0 0 0;
+}
+
+.skill_inner .fa-brands {
+    border: 2px solid rgb(121, 119, 119);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 100%;
+    color: rgb(242, 227, 20);
+    background-color: rgb(19, 20, 21);
+    box-shadow: inset 0px 0px 10px 4px rgb(232, 227, 227);
+    cursor: pointer;
+}
+
+
+/* -----------------------contact us--------------------- */
+
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 2px solid rgb(197, 189, 189);
+}
+
+.form input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 8px #a9abae;
+    transition: 0.5s;
+
+}
+
+::placeholder {
+    font-size: 12px;
+    color: rgb(184, 128, 128);
+
+}
+
+.form .form-check {
+    margin: 1rem 0 1rem 0;
+}
+
+#btn {
+    padding: 5px 12px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+    background-color: #a9abae;
+
+}
+
+.scroll_top {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    opacity: 0;
+}
+
+.scroll_top a {
+    color: black;
+    text-decoration: none;
+}
+
+.scroll_top .fa-arrow-up {
+    height: 40px;
+    width: 41px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid rgb(143, 140, 140);
+    background-color: #a9abae;
+
+}
+
+.scroll_top .fa-arrow-up:hover {
+    color: rgb(250, 241, 112);
+}
+
+.contact_icon {
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(143, 140, 140);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(160, 158, 158, 0.849);
+}
+
+.contact_icon p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.contact_icon a {
+    text-decoration: none;
+}
+
+.contact_icon .fa-whatsapp {
+    color: green;
+}
+
+.contact_icon .fa-envelope {
+    color: rgb(139, 127, 36);
+}
+
+.contact_icon .fa-facebook-messenger {
+    color: rgb(99, 97, 173);
+}
+
+.contact_icon .fa-envelope,
+.contact_icon .fa-whatsapp,
+.contact_icon .fa-facebook-messenger {
+    font-size: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------menu------------------------------- */
+
+@media only screen and (max-width:995px) {
+    .nav_link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        gap: 1rem;
+        position: fixed;
+        left: 0;
+        bottom: -100%;
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(231, 85, 126);
+        transition: 0.9s ease-in-out;
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+        z-index: 2000;
+    }
+
+    .moblie-menu {
+        top: 50vh;
+        bottom: 0;
+
+    }
+
+    .nav_link li {
+        display: inline-block;
+    }
+
+    .nav_link li a {
+        color: rgb(57, 38, 38);
+        font-size: 15px;
+    }
+
+    #back-menu {
+        display: block;
+        color: white;
+    }
+
+    .socil_icon {
+        margin: 0;
+        color: rgb(15, 36, 57);
+        font-size: 20px;
+        display: block;
+        margin-bottom: 15px;
+
+    }
+
+    .logo h2 {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width:578px) {
+    .Learning {
+        width: 120px;
+        height: 80px;
+
+
+    }
+}
+
+@media only screen and (max-width:998px) {
+    .Learning {
+        width: 130px;
+        height: 130px;
+
+
+    }
+}
