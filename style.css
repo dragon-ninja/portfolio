@@ -117,9 +117,8 @@ hr {
     width: 10%;
     display: inline-block;
     margin: 0 8px 5px 0;
-    color: rgb(242, 227, 20);
     height: 4px;
-    background-color: rgb(233, 26, 18);
+    background-color:rgb(242, 227, 20);
 }
 
 .home_header h2 {
@@ -222,7 +221,7 @@ hr {
 }
 
 .about-inner-contant {
-    margin: 10px;
+    margin: 20px 10px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -571,8 +570,12 @@ input[type="email"]:focus {
     .Learning {
         width: 120px;
         height: 80px;
-
-
+    }
+    #back-menu{
+        right: 20px;
+    }
+    navbar{
+        padding:30px 20px ;
     }
 }
 
@@ -581,4 +584,5 @@ input[type="email"]:focus {
     .home_header h2 {
         font-size: 1.5rem;
     }
+
 }
