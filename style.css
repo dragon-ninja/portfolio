@@ -1,8 +1,9 @@
-* {
+*,a {
     padding: 0;
     margin: 0;
     font-family: 'Cabin', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -54,7 +55,7 @@ navbar {
     width: 100%;
     top: 0px;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
     padding: 30px 50px;
     z-index: 10;
 }
@@ -141,7 +142,7 @@ hr {
 .social_media .fa-facebook,
 .social_media .fa-whatsapp,
 .social_media .fa-instagram {
-    border: 2px solid rgb(121, 119, 119);
+    border: 2px solid rgb(199, 185, 185);
     height: 45px;
     width: 45px;
     margin-right: 14px;
@@ -154,7 +155,7 @@ hr {
     border-radius: 100%;
     color: rgb(250, 241, 112);
     background-color: rgb(19, 20, 21);
-    box-shadow: inset 0px 0px 10px 4px rgb(232, 227, 227);
+    /* box-shadow: inset 0px 0px 10px 4px rgb(250, 249, 249); */
 
 }
 
@@ -162,7 +163,7 @@ hr {
 .social_media .fa-whatsapp:hover,
 .social_media .fa-instagram:hover {
     color: rgb(240, 6, 123);
-    font-size: 30px;
+    font-size: 29px;
 }
 
 .home_header span {
